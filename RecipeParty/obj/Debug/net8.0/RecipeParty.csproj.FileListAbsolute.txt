@@ -1,0 +1,14 @@
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\bin\Debug\net8.0\RecipeParty.exe
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\bin\Debug\net8.0\RecipeParty.deps.json
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\bin\Debug\net8.0\RecipeParty.runtimeconfig.json
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\bin\Debug\net8.0\RecipeParty.dll
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\bin\Debug\net8.0\RecipeParty.pdb
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.AssemblyInfoInputs.cache
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.AssemblyInfo.cs
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.csproj.CoreCompileInputs.cache
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.dll
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\refint\RecipeParty.dll
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.pdb
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\RecipeParty.genruntimeconfig.cache
+C:\Users\Cecel\OneDrive\Documents\school\Fall 2024\CSE 310\RecipeParty\RecipeParty\obj\Debug\net8.0\ref\RecipeParty.dll

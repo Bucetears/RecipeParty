@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -24,8 +25,66 @@ namespace RecipeParty
             this.directions = new List<string>();
         }
 
-        public static void Main(){
+        public void starter(){
+            this.name = getRecipeName();
+            this.mealType = getMealType();
+            this.haveMade = haveMadeBefore();
+            this.ingredients = getIngredients();
+            this.directions = getDirections();
+        }
+        public void editRecipe(){
+            string choice;
+            bool continueEdit = true;
+            Console.WriteLine("Would you like to edit the recipe? (y/n) ");
+            choice = Console.ReadLine();
+            if (choice == "y"){
+                int option;
+                while(continueEdit){
+                    Console.WriteLine("What would you like to edit?\n");
+                    Console.WriteLine("0. Recipe Name \n1. Meal Type\n2. Have Made Before\n3.Ingredients\n4.Directions\n5.Nothing\n");
+                    option = int.Parse(Console.ReadLine());
+                    switch (option)
+                    {
+                        case 0:
+                        this.name = getRecipeName();
+                        break;
+                        case 1:
+                        this.mealType = getMealType();
+                        break;
+                        case 2:
+                        this.haveMade = haveMadeBefore();
+                        break;
+                        case 3:
+                        this.ingredients = getIngredients();
+                        break;
+                        case 4:
+                        this.directions = getDirections();
+                        break;
+                        case 5:
+                        continueEdit = false;
+                        break;
+                    }
+                }
+            }
             
+        }
+
+        public void viewRecipe(){
+            Console.WriteLine(this.name, "\n Meal Type: ", this.mealType);
+            if (this.haveMade)
+            {
+                Console.WriteLine("Made Before: Yes!");
+            }
+            else {
+                Console.WriteLine("Made Before: No!");
+            }
+            Console.WriteLine("Ingredients: ", ingredients);
+            foreach (string step in this.directions){
+                Console.WriteLine(step);
+            }
+        }
+        public void viewRecipeName(){
+            Console.WriteLine(this.name);
         }
         public static string getRecipeName()
         {
@@ -36,21 +95,27 @@ namespace RecipeParty
 
         public static string getMealType()
         {
-            List<string> mealOptions = new List<string>();
-            mealOptions.Add("Breakfast");
-            mealOptions.Add("Dinner");
-            mealOptions.Add("Snack");
-            mealOptions.Add("Dessert");
-            int length = mealOptions.Count();
+            string mealType = "No meal Type";
             int choice = 0;
             Console.WriteLine("Which Meal Type would you like?\n");
-            for (int i = 0; i < length; i++)
-            {
-                Console.WriteLine(i.ToString(), ": ", mealOptions[i]);
-            }
+            Console.WriteLine("0. Breakfast \n1. Snack\n2. Dinner\n3.Dessert");
             Console.WriteLine("Enter the number of the option you would like: ");
             choice = int.Parse(Console.ReadLine());
-            string mealType = mealOptions[choice];
+            switch (choice)
+            {
+                case 0:
+                mealType = "Breakfast";
+                break;
+                case 1:
+                mealType = "Snack";
+                break;
+                case 2:
+                mealType = "Dinner";
+                break;
+                case 3:
+                mealType = "Dessert";
+                break;
+            }
             return mealType;
 
         }
@@ -109,5 +174,6 @@ namespace RecipeParty
             }
             return directions;
         }
+        
     }
 }

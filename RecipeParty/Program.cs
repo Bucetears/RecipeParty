@@ -1,20 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.Numerics;
+using RecipeParty;
 
 class Program
 {
     static void Main()
     {
         Console.WriteLine("Hello World");
-        List<string> mealOptions = new List<string>();
-        mealOptions.Add("Breakfast");
-        mealOptions.Add("Dinner");
-        mealOptions.Add("Snack");
-        mealOptions.Add("Dessert");
+        
 
+        book book1 = new book();
         Recipe recipe1 = new Recipe();
-        recipe1.
-
 
     }
 }

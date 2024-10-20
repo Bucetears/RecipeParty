@@ -12,23 +12,12 @@ class Program
         mealOptions.Add("Snack");
         mealOptions.Add("Dessert");
 
+        Recipe recipe1 = new Recipe();
+        recipe1.
+
 
     }
 }
 
-class Recipe
-{
-    string name = "";
-    bool hasMade = false;
-    Dictionary<string, string> ingredients = new Dictionary<string, string>();
-    string mealType = "";
-    List<string> directions = new List<string>();
 
-    static void getName()
-    {
-        Console.WriteLine("Enter Recipe Name: ");
-        //self.name = Console.ReadLine();
-    }
-    
-}
 

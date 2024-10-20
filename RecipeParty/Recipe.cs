@@ -17,15 +17,15 @@ namespace RecipeParty
 
         public Recipe()
         {
-            name = getRecipeName();
-            mealType = getMealType();
-            haveMade = haveMadeBefore();
-            ingredients = getIngredients();
-            directions = getDirections();
+            this.name = "No Name";
+            this.mealType = "No Type";
+            this.haveMade = false;
+            this.ingredients = new Dictionary<string, string>();
+            this.directions = new List<string>();
         }
 
         public static void Main(){
-
+            
         }
         public static string getRecipeName()
         {

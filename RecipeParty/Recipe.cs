@@ -20,6 +20,8 @@ namespace RecipeParty
             name = getRecipeName();
             mealType = getMealType();
             haveMade = haveMadeBefore();
+            ingredients = getIngredients();
+            directions = getDirections();
         }
 
         public static void Main(){
@@ -75,15 +77,37 @@ namespace RecipeParty
             bool add_ingredients = true;
             string ingredientName;
             string ingredientAmount;
+            string option;
             while (add_ingredients){
                 Console.WriteLine("Type the ingredient name: ");
                 ingredientName = Console.ReadLine();
                 Console.WriteLine("Type the amount needed: ");
                 ingredientAmount = Console.ReadLine();
-                ingredients.Add(new KeyValuePair<string, string>(ingredientName, ingredientAmount));
+                ingredients.Add(ingredientName, ingredientAmount);
+                Console.WriteLine("Add more ingredients? (y/n) ");
+                option = Console.ReadLine();
+                if (option == "n"){
+                    add_ingredients = false;
+                }
             }
             return ingredients;
         }
 
+        public static List<string> getDirections()
+        {
+            List<string> directions = new List<string>();
+            bool add_steps = true;
+            string option;
+            while (add_steps){
+                Console.WriteLine("Type step: ");
+                directions.Add(Console.ReadLine());
+                Console.WriteLine("Add another step? (y/n) ");
+                option = Console.ReadLine();
+                if (option == "n"){
+                    add_steps = false;
+                }
+            }
+            return directions;
+        }
     }
 }

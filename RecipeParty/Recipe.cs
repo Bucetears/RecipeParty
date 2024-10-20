@@ -78,7 +78,10 @@ namespace RecipeParty
             else {
                 Console.WriteLine("Made Before: No!");
             }
-            Console.WriteLine("Ingredients: ", ingredients);
+            Console.WriteLine("Ingredients: ");
+            foreach(var thing in this.ingredients){
+                Console.WriteLine(thing.Key);
+            }
             foreach (string step in this.directions){
                 Console.WriteLine(step);
             }

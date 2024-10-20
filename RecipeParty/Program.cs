@@ -14,15 +14,9 @@ class Program
         bool continueMenu = true;
         int index;
         Console.WriteLine("Welcome to Recipe Party! Let's put in a recipe!");
-        Recipe testRecipe = new Recipe();
-        testRecipe.name = "Water";
-        testRecipe.haveMade = true;
-        testRecipe.mealType = "Snack";
-        testRecipe.ingredients.Add("water", "1 cup");
-        testRecipe.directions.Add("Put water under tap");
-        Recipe[] recipeList = [testRecipe];
-        recipeList = recipeList.Concat(new Recipe[] {testRecipe}).ToArray();
-        Console.WriteLine(recipeList.Count().ToString());
+        Recipe recipe1 = new Recipe();
+        recipe1.starter();
+        Recipe[] recipeList = [recipe1];
         while(continueMenu){
             Console.WriteLine("Welcome to the Recipe Party!\nChoose what you would like to do below.");
             Console.WriteLine("1.Add Recipe\n2.View Recipe\n3.Edit Recipe\n4.Exit");
